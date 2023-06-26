@@ -1,0 +1,454 @@
+body {
+    background-color: #87CEEB; /* Sky blue */
+    
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+* {
+    box-sizing: border-box;
+}
+
+
+
+
+/* main title */
+
+.title-container {
+    position: relative;
+    text-align: center;
+    background: linear-gradient(to right, silver, lightblue, white);
+    padding: 50px;
+    width: 100%;
+    z-index: -1;
+}
+
+.main-title {
+    animation: zoomIn 1.3s;
+    font-size: 3.5em;
+    color: #273338;
+    text-shadow: 2px 2px 4px #29292ed2;
+    margin-top: 1em;
+}
+
+.decorative-elements {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.element { /* benda bulat tu */
+    position: absolute;
+    background: rgba(255, 255, 255, 0.7); /* semi-transparent white */
+    animation: zoomInZoomOut 4s infinite; /* infinite loop of zoom animation */
+    z-index: -1;
+}
+
+.element:nth-child(1) {
+    top: 20%;
+    left: 15%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.element:nth-child(2) {
+    top: 70%;
+    left: 50%;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.element:nth-child(3) {
+    top: 40%;
+    left: 80%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+/* Add more elements as needed */
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    60% {
+        transform: scale(1.2);
+        opacity: 0.4;
+    }
+    80% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+@keyframes zoomInZoomOut {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 0.6;
+    }
+    100% {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
+
+
+
+/* what is tvet*/
+
+.content-section {
+    margin-top: -3em;
+    padding: 20px;
+    background-color: #F0F8FF; /* Alice blue */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Box shadow */
+    
+}
+
+.animation-box {
+    display: flex; 
+    justify-content: space-around; 
+    align-items: start;
+    opacity: 1;
+  }
+  
+  .column {
+    flex: 1; 
+    max-width: 80%;
+  }
+  
+.title {  /* ada box sekali*/
+    animation: zoomIn 1s;
+    text-align: left;
+    color: #273338;
+    margin-top: -0.1em;
+    padding: 20px;
+    border: 2px solid #273338;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.2);
+    background-color: #F8F9FA;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-img {
+    max-width: 29%;
+    height: 29%;
+    animation: fadeInRight 1s;
+    margin-right: -1em;
+    margin-top: 8.5em ;
+}
+
+.content-description {
+    width: 75%;
+    font-size: 1.0em;
+    line-height: 1.2;
+    animation: fadeInLeft 1s;
+    color:#222738 ;
+    text-align: justify;
+}
+
+@keyframes fadeInRight { /*content-img*/
+    from {opacity: 0; transform: translateX(20px);}
+    to {opacity: 1; transform: translateX(0);}
+}
+
+@keyframes fadeInLeft {  /*content-description*/
+    from {opacity: 0; transform: translateX(-20px);}
+    to {opacity: 1; transform: translateX(0);}
+}
+@keyframes zoomIn { /* title, */
+    from {transform: scale(0);}
+    to {transform: scale(1);}
+}
+
+
+
+
+
+/* why pick us */
+
+.why-pick-us-container {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box; /* Include padding in width calculation */
+    box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.2);
+    background-color: #F8F9FA;
+}
+
+
+.why-pick-us-title {
+    text-align: center;
+    font-size: 2em;
+    color: #273338;
+    padding: 20px;
+    border: 2px solid #273338;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.2);
+    background-color: #F8F9FA;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: auto;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.grid-item, .grid-item2 {
+    display: flex;       /* New property */
+    align-items: center; /* New property */
+    justify-content: space-between; /* New property */
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.2);
+    padding: 20px;
+    text-align: center;
+}
+
+.grid-item img {
+    width: 27%;          /* Adjust as needed */
+    height: auto;
+}
+.grid-item2 img {
+    width: 35%;          /* Adjust as needed */
+    height: auto;
+}
+
+
+.grid-item p, .grid-item2 p {
+    width: 45%;          /* Adjust as needed */
+    font-size: 1.0em;
+    color: #273338;
+}
+
+
+@keyframes fadeInMoveUp { /* why-pick-us-container, why-pick-us-title, grid-item */
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.why-pick-us-container,
+.why-pick-us-title,
+.grid-item, .grid-item2 {
+    animation: fadeInMoveUp 1s ease-out both;
+    animation-play-state: paused;
+    visibility: hidden;
+}
+
+/* tvet program section */
+
+body {
+    background-color: #003366; /* dark blue */
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+#programs {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.title-container2 {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 50px;
+    background-color: rgba(255, 255, 255, 0.1); /* slightly transparent white */
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5); /* subtle shadow */
+    /*animation: fadeIn 2s ease-in-out;*/
+    opacity: 0;
+}
+
+.title-container2 h1 {
+    color: #ffdd00; /* golden color for premium feel */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    opacity: 0;
+}
+
+.programs-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    opacity: 0;
+}
+
+.program-box {
+    width: 45%; /* You can adjust this value as needed */
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    /*animation: slideIn 2s ease-in-out;*/
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    opacity: 0;
+}
+
+
+.program-box h2 {
+    color: #ffdd00;
+    text-align: center;
+    opacity: 0;
+}
+
+.program-box img {
+    width: 80%;
+    height: auto;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.3); /* Shadow for 3D effect */
+    /*transition: transform 0.3s ease-in-out; /* Smooth animation for hover effect */
+    opacity: 0;
+}
+
+.program-box img:hover {
+    transform: scale(1.05); /* Slightly enlarge the image on hover */
+}
+
+
+.program-box .program-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffd900;
+    color: #003366;
+    text-decoration: none;
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.2); /* Shadow for 3D effect */
+    /*transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out; /* Smooth animations for hover effects */
+    opacity: 0;
+}
+
+.program-box .program-button:hover {
+    background-color: #dcc636;
+    color: #003366;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.5); /* Increased shadow on hover for depth effect */
+    transform: translateY(-3px); /* Slightly move the button up on hover */
+}
+
+.program-box .program-button:active {
+    box-shadow: 0px 1px 5px rgba(0,0,0,0.5); /* Decreased shadow when button is active (clicked) for depth effect */
+    transform: translateY(0px); /* Move the button back to its original position when active (clicked) */
+}
+
+
+
+.program-desc {
+    color: #ddd;
+    text-align: center;
+    font-size: 1.1em;
+    line-height: 1.4;
+    margin: 20px 0;
+    padding: 10px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.program-desc:hover {
+    background-color: rgba(255,255,255,0.2);
+    transform: scale(1.005);
+}
+
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes slideIn {
+    0% { transform: translateX(-100%); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+}
+
+
+
+.title-container2,
+.title-container2 h1,
+.programs-container,
+.program-box,
+.program-box h2,
+.program-box img,
+.program-box .program-button,
+.program-desc {
+    opacity: 0;
+    animation: fadeInSlide 1s ease-in-out forwards paused;
+}
+
+
+/* utk phone */
+
+@media screen and (max-width: 788px) { /* Adjust this value as needed */
+    .animation-box {
+      flex-direction: column; 
+    }
+
+    /* main title */
+    .main-title {
+        font-size: 2.8em;
+        margin-top: 1em;
+    }
+  
+    .content-img {
+      max-width: 40%;
+      margin-right: 0;
+      margin-top: 0;
+    }
+  
+    .content-description {
+        min-width: 90%;
+        font-size: 0.9em;
+        line-height: 1.2;
+        animation: fadeInLeft 1s;
+        color:#222738 ;
+        text-align: justify;
+    }
+  
+    .grid-container {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  
+    .program-box {
+      width: 100%;
+    }
+  
+    body, html {
+      overflow-x: visible;
+    }
+  }
+  
+
+
