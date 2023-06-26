@@ -6,8 +6,11 @@ body, html { /* x mau bagi ada space */
   min-width: 100%;
 }
 * {
+  margin: 10;
+  padding: 0;
   box-sizing: border-box;
-}  
+}
+
 
 .navv {
   animation: fadeInFromBottom 1s forwards; 
