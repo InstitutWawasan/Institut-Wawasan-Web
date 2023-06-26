@@ -886,7 +886,7 @@
     font-size: 1.8em;
     margin-bottom: 50px;
     margin-top: -1.4em;
-    margin-left: -1em;
+    margin-left: -2em;
   }
 
   .description {
@@ -958,6 +958,10 @@
     margin-bottom: 20px;
     margin-left: -2.0em;
   }
+  .career-path h2 {
+    font-size: 26px;;
+  }
+
   
   .career-path .career-group p {
     font-size: 14px;
