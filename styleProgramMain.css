@@ -851,13 +851,12 @@
     font-size: 20px;
     color: #0077be;
     margin-bottom: 10px;
-    margin-left: -1em;
   }
 
   .program-info ul {
     font-size: 15px;
     line-height: 1.5;
-    margin-left: -2em;
+    margin-left: 1em;
   }
 
   .program-image {
@@ -887,6 +886,7 @@
     font-size: 1.8em;
     margin-bottom: 50px;
     margin-top: -1.4em;
+    margin-left: -1em;
   }
 
   .description {
@@ -901,27 +901,22 @@
     font-size: 1.0em;
     margin-bottom: 0.6em;
     margin-top: -1em;
+    margin-left: -3em;
   }
 
   .highlight2 {
     font-size: 1.0em;
     margin-bottom: 0.6em;
     margin-top: 1em;
-  }
-
-  .features li {
-    font-size: 16px;
-    color: #3a3838;
-    margin: 0.1em;
-    white-space: nowrap;
+    margin-left: -3em;
   }
 
   .features li {
     font-size: 14px;
-    color: #3a3838;
     margin: 0.1em;
-    white-space: nowrap;
+    margin-left: -3em;
   }
+  
 
   /* course structure */
 
@@ -961,7 +956,7 @@
     flex-basis: 100%;
     /* to occupy full width on small screens */
     margin-bottom: 20px;
-    margin-left: -4.5em;
+    margin-left: -2.0em;
   }
   
   .career-path .career-group p {
