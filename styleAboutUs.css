@@ -1,23 +1,23 @@
+.bodyy {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, rgba(75, 134, 201, 0.61), rgba(6, 67, 209, 0.724));
+  overflow-x: hidden;
+}
 * {
   margin: 10;
   padding: 0;
   box-sizing: border-box;
 }
 
-
-.bodyy {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background: linear-gradient(to bottom, rgba(75, 134, 201, 0.61), rgba(6, 67, 209, 0.724));
-}
-
 .contentT {
   position: absolute;
   z-index: 1;
   align-items: left;
-  padding: 10px; /* This line adds some space inside the box */
-  background-color: #03a9f4;
+  padding: 10px;
+  /* This line adds some space inside the box */
+  background-color: #1d97de;
   height: 100%;
   width: 100%;
   height: auto;
@@ -30,12 +30,17 @@
   font-size: 5.0em;
   position: absolute;
   transform: translate(-50%, -50%);
-  border: 3px solid linear-gradient(to bottom, rgba(75, 134, 201, 0.61), rgba(6, 67, 209, 0.724));;
+  border: 3px solid linear-gradient(to bottom, rgba(75, 134, 201, 0.61), rgba(6, 67, 209, 0.724));
+  ;
   border-radius: 10px;
   margin-top: 1.93em;
   margin-left: 3.8em;
   background-color: linear-gradient(to bottom, rgba(75, 134, 201, 0.61), rgba(6, 67, 209, 0.724));
   animation: fadeIn 1s ease-out;
+}
+
+.contentPon h2 {
+  display: none;
 }
 
 .contentT h2:nth-child(1) {
@@ -49,33 +54,30 @@
 }
 
 @keyframes animate {
+
   0%,
   100% {
-    clip-path: polygon(
-      0% 45%,
-      16% 44%,
-      33% 50%,
-      54% 60%,
-      70% 61%,
-      84% 59%,
-      100% 52%,
-      100% 100%,
-      0% 100%
-    );
+    clip-path: polygon(0% 45%,
+        16% 44%,
+        33% 50%,
+        54% 60%,
+        70% 61%,
+        84% 59%,
+        100% 52%,
+        100% 100%,
+        0% 100%);
   }
 
   50% {
-    clip-path: polygon(
-      0% 60%,
-      15% 65%,
-      34% 66%,
-      51% 62%,
-      67% 50%,
-      84% 45%,
-      100% 46%,
-      100% 100%,
-      0% 100%
-    );
+    clip-path: polygon(0% 60%,
+        15% 65%,
+        34% 66%,
+        51% 62%,
+        67% 50%,
+        84% 45%,
+        100% 46%,
+        100% 100%,
+        0% 100%);
   }
 }
 
@@ -95,13 +97,25 @@
 }
 
 @keyframes fadeIn {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes textAnimation {
-  0% {transform: translateY(30px); opacity: 0;}
-  100% {transform: translateY(0); opacity: 1;}
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .content {
@@ -115,14 +129,16 @@
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
   margin-top: 2em;
   margin-bottom: 2em;
-  animation: fadeIn 1s ease-out;  /* Adding fade in effect */
+  animation: fadeIn 1s ease-out;
+  /* Adding fade in effect */
 }
 
 .text-container h1 {
   color: #0d3eb0;
   font-size: 48px;
   font-family: "Roboto", sans-serif;
-  animation: textAnimation 1.2s ease-out;  /* Adding text animation */
+  animation: textAnimation 1.2s ease-out;
+  /* Adding text animation */
 }
 
 .about-description {
@@ -132,25 +148,31 @@
   text-align: justify;
   margin-right: 1em;
   margin-left: -3em;
-  max-width: 500px;  /* Limit the width of the text */
-  animation: textAnimation 1.5s ease-out;  /* Adding text animation */
+  max-width: 500px;
+  /* Limit the width of the text */
+  animation: textAnimation 1.5s ease-out;
+  /* Adding text animation */
 }
 
 
 /* image */
-.swiper{
+.swiper {
   width: 400%;
   height: 600%;
 }
-.swiper-slide img{
+
+.swiper-slide img {
   width: 100%;
 }
 
 
 @keyframes zoomInOut {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: scale(1) translateY(0);
   }
+
   50% {
     transform: scale(1.01) translateY(-5px);
   }
@@ -165,46 +187,53 @@
   min-height: 600%;
   margin-left: -5em;
   overflow: hidden;
-  animation: zoomInOut 1.5s ease-in-out;  /* Adding zoom in/out animation */
+  animation: zoomInOut 1.5s ease-in-out;
+  /* Adding zoom in/out animation */
 }
+
 @media only screen and (max-width: 1000px) {
-  
-  .contentT h2 {  /* (title air) */
-    font-size: 4.0em;
-    margin-top: 2.5em;
-    margin-bottom: 2em;
-  }
+
   .image-container {
     max-width: 50%;
     min-height: 200%;
     margin-left: 0;
     /* Other styles */
   }
-  .about-description{
+
+  .about-description {
     font-size: 14px;
     margin-right: 1em;
     margin-left: 0em;
-    max-width: 900px;  /* Limit the width of the text */
+    max-width: 900px;
+    /* Limit the width of the text */
   }
 }
 
 
-.swiper .swiper-button-prev, .swiper .swiper-button-next {
-  color: rgb(73, 142, 252); /* Change color to white */
-  
-  padding: 10px; /* Increase size */
-  border-radius: 0%; /* Make them circular */
-  font-size: 20px; /* Increase arrow size */
-  transition: background-color 0.3s ease; /* Smooth background color transition */
+.swiper .swiper-button-prev,
+.swiper .swiper-button-next {
+  color: rgb(73, 142, 252);
+  /* Change color to white */
+
+  padding: 10px;
+  /* Increase size */
+  border-radius: 0%;
+  /* Make them circular */
+  font-size: 20px;
+  /* Increase arrow size */
+  transition: background-color 0.3s ease;
+  /* Smooth background color transition */
 }
 
-.swiper .swiper-button-prev:hover, .swiper .swiper-button-next:hover {
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.5); /* Add shadow for better visibility */
+.swiper .swiper-button-prev:hover,
+.swiper .swiper-button-next:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  /* Add shadow for better visibility */
   background-color: #4d535c;
 }
 
 
-.swiper .swiper-pagination-bullet-active{
+.swiper .swiper-pagination-bullet-active {
   background-color: #3278e0;
 }
 
@@ -254,6 +283,37 @@
 /* Mobile styles */
 @media only screen and (max-width: 800px) {
 
+
+  .contentT h2 {
+    /* (title air) */
+    display: none;
+  }
+
+  .contentT h2:nth-child(1) {
+    display: none;
+  }
+
+  .contentT h2:nth-child(2) {
+    display: none;
+  }
+
+  .contentPhone h2 {
+    display: block;
+    color: #1367d6;
+    font-size: 2.7em;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    margin-top: 3.23em;
+    margin-left: 4.2em;
+    animation: fadeIn 1s ease-out;
+    z-index: 3;
+  }
+
+
+
+
+
   .contentT {
     padding: 5px;
     /* Other styles */
@@ -276,7 +336,7 @@
     margin-top: 8em;
     /* Other styles */
   }
-  
+
 
 
   .text-container h1 {
@@ -319,160 +379,4 @@
     margin-top: 0.4em;
   }
 
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-.image-container img {
- height: auto;
-  max-width: 80%;
-  border: 3px solid #3a2cd4;
-  border-radius: 40px;
-  position: absolute;
-  opacity: 0;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-}
-
-.slide {
-  position: absolute;
-  opacity: 0;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-}
-
-.slide.active {
-  animation-name: slideInFromRight;
-}
-
-.slide.out {
-  animation-name: slideOutToLeft;
-}
-
-@keyframes slideInFromRight {
-  0% {
-    opacity: 0;
-    transform: translateX(100%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes slideOutToLeft {
-  0% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-  100% {
-    opacity: 0;
-    transform: translateX(-100%);
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .content {
-    flex-direction: column;
-    text-align: center;
-  }
-  .text-container {
-    margin: 20px 0;
-  }
-  .image-container {
-    width: 100%;
-  }
-}
-
-
-.image-container .btn {
-  background-color: #ef2f2f;
-  color: black;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 30px;  Increase the right and left margins 
-  cursor: pointer;
-  border: 0;
-  border-radius: 4px;
-  font-family: 'Roboto', sans-serif;
-  transition: all 0.3s ease-in-out;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-}
-
-
-.image-container .btn:hover {
-  background-color: #ff6161;
-  color: white;
-  transform: translateY(-2px);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
-}
-
-.image-container .btn:active {
-  transform: translateY(0);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-}
-
-.image-container img.slide.active {
-  opacity: 1;
-  transform: translateX(0);
-  position: relative;
-}
-
-@media only screen and (max-width: 768px) {
-  .image-container {
-    width: 100%;
-    flex-direction: column;
-  }
 }
