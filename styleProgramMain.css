@@ -1,3 +1,10 @@
+* {
+  margin: 10;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
 @keyframes background-animation {
   0% {
     background-color: #00a1ff;
