@@ -186,7 +186,7 @@
   line-height: 1.5;
   color: #555;
   animation: heading-animation 1s ease-in-out;
-  margin-left: 1.2em;
+  margin-left: 3.2em;
 }
 
 @keyframes zoom-in-left {
