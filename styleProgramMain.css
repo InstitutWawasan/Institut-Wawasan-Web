@@ -821,6 +821,7 @@
   .program-title {
     font-size: 1.7rem;
     margin-top: 20px;
+    -webkit-text-stroke: 0px #fff;
   }
 
   .program-titleBM {
@@ -886,6 +887,7 @@
     margin-top: -1em;
   }
 
+  
   .highlight {
     font-size: 1.0em;
     margin-bottom: 0.6em;
@@ -950,7 +952,7 @@
     flex-basis: 100%;
     /* to occupy full width on small screens */
     margin-bottom: 20px;
-    margin-left: -3em;
+    margin-left: -4.3em;
   }
   
   .career-path .career-group p {
